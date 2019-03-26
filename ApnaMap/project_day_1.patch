@@ -1,0 +1,110 @@
+Index: ApnaMap/app/src/main/res/layout/activity_persistance.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ApnaMap/app/src/main/res/layout/activity_persistance.xml	(date 1553594047000)
++++ ApnaMap/app/src/main/res/layout/activity_persistance.xml	(date 1553594047000)
+@@ -0,0 +1,101 @@
++<?xml version="1.0" encoding="utf-8"?>
++<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".PersistanceActivity"
++    android:padding="20dp">
++
++    <EditText
++        android:id="@+id/text_email"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginBottom="8dp"
++        android:ems="10"
++        android:hint="@string/text_email"
++        android:autofillHints="@string/text_email"
++        android:inputType="textEmailAddress"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.2"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/text_name"
++        app:layout_constraintVertical_bias="0.128" />
++
++    <EditText
++        android:id="@+id/text_phone"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginBottom="8dp"
++        android:ems="10"
++        android:inputType="phone"
++        android:hint="@string/text_phone"
++        android:autofillHints="@string/text_phone"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.439"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/text_email"
++        app:layout_constraintVertical_bias="0.25" />
++
++    <EditText
++        android:id="@+id/text_name"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginBottom="8dp"
++        android:ems="10"
++        android:hint="@string/text_name"
++        android:autofillHints="@string/text_name"
++        android:inputType="textPersonName"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.047" />
++
++    <Button
++        android:id="@+id/register_btn"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginBottom="8dp"
++        android:text="@string/register_btn"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.498"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/text_pass"
++        app:layout_constraintVertical_bias="0.951" />
++
++    <EditText
++        android:id="@+id/text_pass"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="8dp"
++        android:layout_marginTop="8dp"
++        android:layout_marginEnd="8dp"
++        android:layout_marginBottom="8dp"
++        android:ems="10"
++        android:hint="@string/text_pass"
++        android:autofillHints="@string/text_pass"
++        android:inputType="textPassword"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.2"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/text_phone"
++
++        app:layout_constraintVertical_bias="0.296" />
++</android.support.constraint.ConstraintLayout>
+\ No newline at end of file
